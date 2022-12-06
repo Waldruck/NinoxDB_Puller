@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NINOXDB</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src ="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="scripts.js"></script>
+</head>
+<header id = "header">
+
+</header>
+<body>
+
+    <label for="searchBar">Search:</label><br>
+    <input type="text" id="searchBar" name="searchBar"><br>
+
+
+<button type="button" class = "searchDB" onclick="apiConnect()">Search DB's</button>
+
+<div id="root">
+    <div class="container"></div>
+</div>
+
+<div id = "JSON" style="text-align:center">
+</div>
+    <div class = " tableDiv">
+        <table border = "1" id = "table">
+            <thead>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Description</th>
+            <th>Year/Copyright</th>
+            </thead>
+
+            <tbody id = "tbody"></tbody>
+        </table>
+    </div>
+
+</body>
+</html>
